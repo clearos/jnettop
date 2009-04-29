@@ -1,0 +1,3 @@
+jnettop can use a configuration file named .jnettop, which is looked for in the home directory of the user running the application. A sample configuration file is provided under the name ".jnettop" in the documentation directory.
+
+More details are available in the bundled README file.
