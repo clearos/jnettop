@@ -1,7 +1,7 @@
 Summary: Network traffic tracker
 Name: jnettop
 Version: 0.13.0
-Release: 4
+Release: 5%{?dist}
 Group: Applications/Internet
 License: GPLv2+
 Source: http://www.kubs.cz/jnettop/dist/jnettop-%{version}.tar.gz
@@ -49,6 +49,9 @@ rm -rf $RPM_BUILD_ROOT
 %doc AUTHORS ChangeLog COPYING NEWS README README.UIA .jnettop PORTING README.Fedora
 
 %changelog
+* Wed Apr 29 2009 Manuel <lonely wolf> Wolfshant <wolfy@fedoraproject.org> 0.13.0-5
+- Use disttag in release field
+
 * Mon Apr 27 2009 Manuel <lonely wolf> Wolfshant <wolfy@fedoraproject.org> 0.13.0-4
 - Add conditional BR for EL-4 (libpcap instead of libpcap-devel)
 
