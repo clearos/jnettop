@@ -1,7 +1,7 @@
 Summary: Network traffic tracker
 Name: jnettop
 Version: 0.13.0
-Release: 7%{?dist}
+Release: 8%{?dist}
 Group: Applications/Internet
 License: GPLv2+
 Source: http://jnettop.kubs.info/dist/jnettop-%{version}.tar.gz
@@ -49,6 +49,9 @@ rm -rf $RPM_BUILD_ROOT
 %doc AUTHORS ChangeLog COPYING NEWS README README.UIA .jnettop PORTING README.Fedora
 
 %changelog
+* Thu Feb 18 2010 Manuel <lonely wolf> Wolfshant <wolfy@fedoraproject.org> 0.13.0-8
+- Rebuild against db4-4.8
+
 * Mon Jan 11 2010 Manuel <lonely wolf> Wolfshant <wolfy@fedoraproject.org> 0.13.0-7
 - URL for source file has changed
 
