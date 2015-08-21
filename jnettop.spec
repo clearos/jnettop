@@ -1,7 +1,7 @@
 Summary: Network traffic tracker
 Name: jnettop
 Version: 0.13.0
-Release: 16%{?dist}
+Release: 16%{?dist}.1
 Group: Applications/Internet
 License: GPLv2+
 Source: http://jnettop.kubs.info/dist/jnettop-%{version}.tar.gz
@@ -13,7 +13,7 @@ BuildRequires: libpcap
 %else
 BuildRequires: libpcap-devel 
 %endif
-BuildRequires: ncurses-devel glib2-devel db4-devel
+BuildRequires: ncurses-devel glib2-devel libdb-devel
 
 
 %description
@@ -49,6 +49,9 @@ rm -rf $RPM_BUILD_ROOT
 %doc AUTHORS ChangeLog COPYING NEWS README README.UIA .jnettop PORTING README.Fedora
 
 %changelog
+* Fri Aug 21 2015 ClearFoundation <developer@clearfoundation.com> - 0.13.0-16.clear.1
+- Migrated to ClearFoundation build system
+
 * Wed Jun 17 2015 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.13.0-16
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_23_Mass_Rebuild
 
